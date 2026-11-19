@@ -83,3 +83,14 @@ def injuries():
                             tag=(i.get("details", {}).get("fantasyStatus") or {}).get("abbreviation"),
                             note=i.get("shortComment")))
     return out
+
+
+def closing(event):
+    """DraftKings line ESPN shows on a finished game (last pregame line) and the final score."""
+    d = _get(f"{BASE}/summary?event={event}")
+    pc = (d.get("pickcenter") or [{}])[0]
+    comp = d.get("header", {}).get("competitions", [{}])[0]
+    sc = {c["homeAway"]: float(c.get("score") or "nan") for c in comp.get("competitors", [])}
+    return dict(close_spread_home=pc.get("spread"), close_total=pc.get("overUnder"),
+                home_score=sc.get("home"), away_score=sc.get("away"),
+                final=comp.get("status", {}).get("type", {}).get("completed", False))

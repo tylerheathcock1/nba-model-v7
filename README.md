@@ -10,3 +10,7 @@ Player-based NBA spread model: player impact ratings × projected minutes, adjus
 - `v7/config.py`: settings (chosen on 2011-19 backtest; 2021-24 held out)
 
 Work in progress: settings and the market blend are still being tuned.
+
+## Daily operation
+A scheduled Claude session runs at 7:30 AM Phoenix and again one hour before the first tip, following `RUNBOOK.md`.
+Results go to the NBA_Model_v7 Google Sheet; the full pick log is `data/picklog.csv`.

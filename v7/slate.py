@@ -30,12 +30,19 @@ def run(day):
             roster["status"] = roster.pid.map(tag).fillna("")
             roster["avail"] = np.where(roster.status.isin(["OUT", "OFS"]), 0.0, np.where(roster.status == "GTD", GTD_SHARE, 1.0))
             roster["proj"] = roster.pmin * roster.avail
-            scale = 240 / roster.proj.sum() if roster.proj.sum() > 0 else 0
-            roster["proj"] *= scale
+            roster = roster.sort_values("proj", ascending=False)
+            tot = roster.proj.sum()
+            if tot > 240:   # too many minutes: trim from the end of the bench first
+                before = roster.proj.cumsum() - roster.proj
+                roster["proj"] = np.clip(240 - before, 0, None).clip(upper=roster.proj)
+            elif tot > 0:   # absences: spread the missing minutes proportionally (capped at 42 per player)
+                roster["proj"] = (roster.proj * 240 / tot).clip(upper=42)
             roster["rating"] = [r.get(pid, prior.get(pid, -2.0)) for pid in roster.pid]
             roster["value"] = roster.proj / 48 * roster.rating
             # full-strength version: everyone at usual minutes, to show what injuries cost
-            full = roster.pmin * (240 / roster.pmin.sum()) / 48 * roster.rating
+            fm = roster.pmin.sort_values(ascending=False); fb = fm.cumsum() - fm
+            fm = np.clip(240 - fb, 0, None).clip(upper=fm) if fm.sum() > 240 else fm * 240 / fm.sum()
+            full = fm.reindex(roster.index) / 48 * roster.rating
             side[t] = (roster.value.sum(), full.sum())
             for x in roster.itertuples():
                 detail.append(dict(date=day, team=t, player=x.name, status=x.status, usual_min=round(x.pmin, 1),
@@ -51,7 +58,7 @@ def run(day):
         rows.append(dict(date=day, tip_utc=g["tip"], away=g["away"], home=g["home"],
                          dk_spread_home=g["spread_home"], dk_open_home=g["spread_home_open"], dk_total=g["total"],
                          model_margin_home=round(model, 1), model_spread_home=round(-model, 1),
-                         gap_vs_market=round(model - mkt, 1) if mkt is not None else None,
+                         gap_vs_market=round(-model - g["spread_home"], 1) if mkt is not None else None,
                          injury_swing_home=round(inj_cost, 1), lean=pick))
     S = pd.DataFrame(rows); D = pd.DataFrame(detail)
     os.makedirs(f"{DATA}/slates", exist_ok=True)
