@@ -6,7 +6,7 @@ Repo: `tylerheathcock1/nba-model-v7`, branch `main`.
 
 **Rules.**
 - This run only logs and writes the v7 sheet. It never places bets, never touches NBA_Model_v5 or v6, and never changes settings in `v7/config.py`.
-- If a step fails, finish what you can. Then put a one-line note in `'Read Me'!A30` saying what failed, with the time in Phoenix.
+- If a step fails, finish what you can. If Sheets access works, put a one-line note in `'Read Me'!A30` saying what failed, with the time in Phoenix.
 
 ## Steps
 
@@ -23,7 +23,9 @@ Repo: `tylerheathcock1/nba-model-v7`, branch `main`.
    - `FIRST_TIP_PHX`: the first tip time today.
    - `PRETIP_RUN_PHX`: the time for the pre-tip run, one hour before first tip.
 
-3. **Update the sheet.** For each tab below:
+3. **Update the sheet.** If this session has no Google Sheets tools (`mcp__Google_Sheets__*`), skip this step and say so in the final reply. The data is still saved in step 4, and the next run that does have Sheets access writes the Pick Log, including this run's rows.
+
+   Otherwise, for each tab below:
    - Clear `'<Tab>'!A1:Z2000` with `batch_clear_values`.
    - Write the JSON printed by `python -m v7.sheetrows <key>` to `'<Tab>'!A1` with `update_values`. Pass the values exactly as printed.
 
@@ -47,7 +49,6 @@ Repo: `tylerheathcock1/nba-model-v7`, branch `main`.
      - `create_new_session_on_fire` = true.
      - `name` = `NBA v7 pre-tip YYYY-MM-DD`.
      - `initiation` = `human_schedule`.
-     - `connectors` = the Google Sheets connector.
      - `prompt` = `Run the NBA model v7 pretip run: follow RUNBOOK.md in the GitHub repo tylerheathcock1/nba-model-v7 with RUN=pretip.`
 
 6. **Finish.** Reply with three or four lines:
