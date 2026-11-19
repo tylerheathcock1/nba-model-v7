@@ -44,12 +44,10 @@ Repo: `tylerheathcock1/nba-model-v7`, branch `main`.
 
 5. **Schedule the pre-tip run (morning only).**
    - **Skip this step** if `PRETIP_RUN_PHX` is `none` (no games today) or is already in the past.
-   - **Otherwise** create a one-shot scheduled task with `create_trigger`:
-     - `run_once_at` = that time, as local time with `[America/Phoenix]`.
-     - `create_new_session_on_fire` = true.
-     - `name` = `NBA v7 pre-tip YYYY-MM-DD`.
-     - `initiation` = `human_schedule`.
-     - `prompt` = `Run the NBA model v7 pretip run: follow RUNBOOK.md in the GitHub repo tylerheathcock1/nba-model-v7 with RUN=pretip.`
+   - **Otherwise** re-arm the existing pre-tip task with `update_trigger`. Don't create a new one: the existing task carries the Google Sheets connector and a new one would not.
+     - `trigger_id` = `trig_01AkeowuCuB7z8RYp6Zf34P2`.
+     - `run_once_at` = that time, as local time with `[America/Phoenix]`, e.g. `2026-11-20T16:00:00[America/Phoenix]`.
+     - `enabled` = true.
 
 6. **Finish.** Reply with three or four lines:
    - games logged;
