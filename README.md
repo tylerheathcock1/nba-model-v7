@@ -12,5 +12,5 @@ Player-based NBA spread model: player impact ratings × projected minutes, adjus
 Work in progress: settings and the market blend are still being tuned.
 
 ## Daily operation
-A scheduled Claude session runs at 7:30 AM Phoenix and again one hour before the first tip, following `RUNBOOK.md`.
+A scheduled Claude session runs at 7:30 AM Phoenix and again at 3:28 PM (pre-tip), following `RUNBOOK.md`.
 Results go to the NBA_Model_v7 Google Sheet; the full pick log is `data/picklog.csv`.
