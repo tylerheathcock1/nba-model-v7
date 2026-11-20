@@ -9,7 +9,12 @@ DATA = os.path.join(os.path.dirname(__file__), "..", "data")
 OUT = f"{DATA}/out"; LOG = f"{DATA}/picklog.csv"
 PHX = ZoneInfo("America/Phoenix")
 
+TEXT = ["lean", "lean_side", "moved_toward_model", "result"]
+
 def grade(log):
+    for c in TEXT:
+        if c not in log: log[c] = ""
+        log[c] = log[c].astype(object).where(log[c].notna(), "")
     todo = log[log.result.isna() | (log.result == "")]
     cache = {}
     for i, row in todo.iterrows():
