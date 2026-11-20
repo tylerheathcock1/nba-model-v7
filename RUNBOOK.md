@@ -11,8 +11,9 @@ Repo: `tylerheathcock1/nba-model-v7`, branch `main`.
 ## Steps
 
 1. **Get the code.**
-   - Call `add_repo` with owner `tylerheathcock1`, repo `nba-model-v7`, access `push`.
-   - Clone the repo to the path that tool gives.
+   - The repo should already be checked out, because it is one of the routine's repository sources. Look for `nba-model-v7` in or next to the working directory.
+   - If it isn't there, try `add_repo` with owner `tylerheathcock1`, repo `nba-model-v7`, access `push`, then clone it.
+   - If neither works, stop and report: "repo not attached to this routine". Without the repo the run can't save its data.
    - Run `pip install -q -r requirements.txt`.
 
 2. **Run the model.** From the repo root:
@@ -44,7 +45,7 @@ Repo: `tylerheathcock1/nba-model-v7`, branch `main`.
 
 5. **Schedule the pre-tip run (morning only).**
    - **Skip this step** if `PRETIP_RUN_PHX` is `none` (no games today) or is already in the past.
-   - **Otherwise** re-arm the existing pre-tip task with `update_trigger`. Don't create a new one: the existing task carries the Google Sheets connector and a new one would not.
+   - **Otherwise** re-arm the existing pre-tip task with `update_trigger`. If that tool isn't available, say so in the final reply. Don't create a new one: the existing task carries the Google Sheets connector and a new one would not.
      - `trigger_id` = `trig_01AkeowuCuB7z8RYp6Zf34P2`.
      - `run_once_at` = that time, as local time with `[America/Phoenix]`, e.g. `2026-11-20T16:00:00[America/Phoenix]`.
      - `enabled` = true.
