@@ -31,7 +31,6 @@ date,team,player,status,usual_min,proj_min,rating,pts_tonight
 2026-11-27,BOS,Mike Conley,,15.1,15.1,-0.98,-0.31
 2026-11-27,BOS,Luka Garza,,14.7,12.5,0.99,0.26
 2026-11-27,DAL,Cooper Flagg,,32.8,32.8,1.33,0.91
-2026-11-27,DAL,Kyrie Irving,,31.6,31.6,2.52,1.66
 2026-11-27,DAL,P.J. Washington,,28.4,28.4,-0.89,-0.53
 2026-11-27,DAL,Naji Marshall,,24.0,24.0,-0.92,-0.46
 2026-11-27,DAL,Caleb Martin,,23.4,23.4,-1.86,-0.91
@@ -39,7 +38,9 @@ date,team,player,status,usual_min,proj_min,rating,pts_tonight
 2026-11-27,DAL,Zaccharie Risacher,,22.5,22.5,-0.42,-0.2
 2026-11-27,DAL,Walter Clayton Jr.,,20.3,20.3,-3.34,-1.41
 2026-11-27,DAL,Morez Johnson Jr.,,18.1,18.1,-1.28,-0.48
-2026-11-27,DAL,Santi Aldama,,16.8,15.5,-0.21,-0.07
+2026-11-27,DAL,Santi Aldama,,16.8,16.8,-0.21,-0.07
+2026-11-27,DAL,Kyrie Irving,GTD,31.6,15.8,2.52,0.83
+2026-11-27,DAL,Max Christie,,15.4,14.5,-2.18,-0.66
 2026-11-27,DEN,Jamal Murray,,37.2,37.2,2.49,1.93
 2026-11-27,DEN,Nikola Jokic,,36.7,36.7,5.41,4.14
 2026-11-27,DEN,Christian Braun,,33.1,33.1,-0.97,-0.67
@@ -95,15 +96,14 @@ date,team,player,status,usual_min,proj_min,rating,pts_tonight
 2026-11-27,LAC,Kobe Sanders,,17.3,17.3,-1.68,-0.6
 2026-11-27,LAC,Isaiah Jackson,,14.7,10.9,-1.18,-0.27
 2026-11-27,LAL,Luka Doncic,,36.2,36.2,4.64,3.5
+2026-11-27,LAL,Austin Reaves,,34.8,34.8,2.18,1.58
 2026-11-27,LAL,Walker Kessler,,31.6,31.6,1.2,0.79
 2026-11-27,LAL,Quentin Grimes,,30.1,30.1,-0.21,-0.13
 2026-11-27,LAL,Jake LaRavia,,27.8,27.8,-1.07,-0.62
 2026-11-27,LAL,Matisse Thybulle,,24.6,24.6,-0.86,-0.44
 2026-11-27,LAL,Ziaire Williams,,21.8,21.8,-1.37,-0.62
 2026-11-27,LAL,Sandro Mamukelashvili,,21.7,21.7,1.05,0.48
-2026-11-27,LAL,Collin Sexton,,21.1,21.1,-0.48,-0.21
-2026-11-27,LAL,Austin Reaves,GTD,34.8,17.4,2.18,0.79
-2026-11-27,LAL,Jarred Vanderbilt,,12.5,7.7,-1.89,-0.31
+2026-11-27,LAL,Collin Sexton,,21.1,11.5,-0.48,-0.12
 2026-11-27,MEM,Ty Jerome,,28.4,29.4,2.01,1.23
 2026-11-27,MEM,Cedric Coward,,28.2,29.2,0.81,0.49
 2026-11-27,MEM,Jaylen Wells,,25.4,26.3,-0.67,-0.37
@@ -120,15 +120,14 @@ date,team,player,status,usual_min,proj_min,rating,pts_tonight
 2026-11-27,MIA,Davion Mitchell,,35.5,35.5,-0.42,-0.31
 2026-11-27,MIA,Bam Adebayo,,33.0,33.0,1.94,1.34
 2026-11-27,MIA,Pelle Larsson,,27.9,27.9,-1.39,-0.81
+2026-11-27,MIA,Andrew Wiggins,,26.0,26.0,-0.33,-0.18
 2026-11-27,MIA,Klay Thompson,,24.7,24.7,-2.22,-1.14
 2026-11-27,MIA,Ryan Conwell,,22.3,22.3,-1.61,-0.75
 2026-11-27,MIA,Bobby Portis,,19.1,19.1,-1.15,-0.46
 2026-11-27,MIA,Tim Hardaway Jr.,,16.0,16.0,-0.96,-0.32
 2026-11-27,MIA,Giannis Antetokounmpo,GTD,32.0,16.0,4.35,1.45
-2026-11-27,MIA,Andrew Wiggins,GTD,26.0,13.0,-0.33,-0.09
 2026-11-27,MIA,Nikola Jovic,,12.9,12.9,-1.61,-0.43
-2026-11-27,MIA,Simone Fontecchio,,11.7,11.7,-0.23,-0.06
-2026-11-27,MIA,Myron Gardner,,10.5,7.8,-0.2,-0.03
+2026-11-27,MIA,Simone Fontecchio,,11.7,6.5,-0.23,-0.03
 2026-11-27,MIL,Tyler Herro,,32.4,32.4,-0.77,-0.52
 2026-11-27,MIL,Kyle Kuzma,,28.5,28.5,-1.01,-0.6
 2026-11-27,MIL,Jaime Jaquez Jr.,,27.3,27.3,-0.32,-0.18
@@ -139,18 +138,19 @@ date,team,player,status,usual_min,proj_min,rating,pts_tonight
 2026-11-27,MIL,Nate Ament,,20.7,20.7,-3.07,-1.32
 2026-11-27,MIL,Kel'el Ware,,20.5,20.5,0.94,0.4
 2026-11-27,MIL,Ousmane Dieng,,17.1,13.2,-2.85,-0.78
-2026-11-27,MIN,Jaden McDaniels,,34.7,34.7,1.44,1.04
-2026-11-27,MIN,Ayo Dosunmu,,32.6,32.6,0.95,0.65
-2026-11-27,MIN,Jonathan Kuminga,,30.4,30.4,1.12,0.71
-2026-11-27,MIN,Rudy Gobert,,29.5,29.5,1.63,1.0
-2026-11-27,MIN,Terrence Shannon Jr.,,22.4,22.4,-0.35,-0.16
-2026-11-27,MIN,Trey Lyles,,20.2,20.2,-0.87,-0.37
-2026-11-27,MIN,Joan Beringer,,16.7,16.7,0.79,0.28
-2026-11-27,MIN,Bones Hyland,,16.3,16.3,0.88,0.3
-2026-11-27,MIN,LaMelo Ball,GTD,29.7,14.8,3.55,1.1
-2026-11-27,MIN,Cody Williams,,12.5,12.5,-3.59,-0.94
-2026-11-27,MIN,Rocco Zikarsky,,6.8,6.8,-1.99,-0.28
-2026-11-27,MIN,Zyon Pullin,,5.9,2.9,-1.38,-0.08
+2026-11-27,MIN,Jaden McDaniels,,34.7,35.3,1.44,1.06
+2026-11-27,MIN,Ayo Dosunmu,,32.6,33.2,0.95,0.66
+2026-11-27,MIN,Jonathan Kuminga,,30.4,30.9,1.12,0.72
+2026-11-27,MIN,Rudy Gobert,,29.5,30.0,1.63,1.02
+2026-11-27,MIN,Terrence Shannon Jr.,,22.4,22.8,-0.35,-0.16
+2026-11-27,MIN,Trey Lyles,,20.2,20.5,-0.87,-0.37
+2026-11-27,MIN,Joan Beringer,,16.7,17.0,0.79,0.28
+2026-11-27,MIN,Bones Hyland,,16.3,16.6,0.88,0.3
+2026-11-27,MIN,Cody Williams,,12.5,12.8,-3.59,-0.95
+2026-11-27,MIN,Rocco Zikarsky,,6.8,6.9,-1.99,-0.29
+2026-11-27,MIN,Zyon Pullin,,5.9,6.0,-1.38,-0.17
+2026-11-27,MIN,Johni Broome,,4.4,4.5,-2.55,-0.24
+2026-11-27,MIN,Isaiah Evans,,3.4,3.5,-2.2,-0.16
 2026-11-27,NO,Trey Murphy III,,33.7,33.7,1.24,0.87
 2026-11-27,NO,Saddiq Bey,,33.4,33.4,-0.73,-0.51
 2026-11-27,NO,Zion Williamson,,32.4,32.4,2.01,1.36
@@ -160,19 +160,18 @@ date,team,player,status,usual_min,proj_min,rating,pts_tonight
 2026-11-27,NO,Yves Missi,,23.2,23.2,-1.39,-0.67
 2026-11-27,NO,Derik Queen,,23.1,23.1,-0.82,-0.4
 2026-11-27,NO,Jaron Pierre Jr.,,17.2,11.9,-2.55,-0.63
-2026-11-27,NY,Jalen Brunson,,34.7,34.7,3.46,2.5
-2026-11-27,NY,Karl-Anthony Towns,,32.8,32.8,3.69,2.51
-2026-11-27,NY,Josh Hart,,31.7,31.7,0.37,0.25
-2026-11-27,NY,Mikal Bridges,,28.6,28.6,0.39,0.23
-2026-11-27,NY,Landry Shamet,,28.4,28.4,-0.0,-0.0
-2026-11-27,NY,OG Anunoby,GTD,34.5,17.3,0.41,0.15
-2026-11-27,NY,Jose Alvarado,,14.3,14.3,-0.78,-0.23
-2026-11-27,NY,Tyler Kolek,,11.9,11.9,-0.24,-0.06
-2026-11-27,NY,Mohamed Diawara,,11.4,11.4,-0.8,-0.19
-2026-11-27,NY,James Wiseman,,9.4,9.4,-1.93,-0.38
-2026-11-27,NY,Tyler Nickel,,9.0,9.0,-1.92,-0.36
-2026-11-27,NY,Pacome Dadiet,,8.5,8.5,-1.31,-0.23
-2026-11-27,NY,Miles McBride,GTD,16.6,2.2,-1.3,-0.06
+2026-11-27,NY,Jalen Brunson,,34.7,39.4,3.46,2.84
+2026-11-27,NY,Josh Hart,,31.7,36.0,0.37,0.28
+2026-11-27,NY,Mikal Bridges,,28.6,32.5,0.39,0.27
+2026-11-27,NY,Landry Shamet,,28.4,32.2,-0.0,-0.0
+2026-11-27,NY,Karl-Anthony Towns,GTD,32.8,18.6,3.69,1.43
+2026-11-27,NY,Jose Alvarado,,14.3,16.2,-0.78,-0.26
+2026-11-27,NY,Tyler Kolek,,11.9,13.5,-0.24,-0.07
+2026-11-27,NY,Mohamed Diawara,,11.4,12.9,-0.8,-0.21
+2026-11-27,NY,James Wiseman,,9.4,10.7,-1.93,-0.43
+2026-11-27,NY,Tyler Nickel,,9.0,10.2,-1.92,-0.41
+2026-11-27,NY,Pacome Dadiet,,8.5,9.7,-1.31,-0.26
+2026-11-27,NY,Dalton Knecht,,7.0,7.9,-1.77,-0.29
 2026-11-27,PHI,Tyrese Maxey,,35.6,35.6,1.71,1.27
 2026-11-27,PHI,VJ Edgecombe,,35.3,35.3,0.24,0.18
 2026-11-27,PHI,LeBron James,,32.4,32.4,1.01,0.68
@@ -193,17 +192,18 @@ date,team,player,status,usual_min,proj_min,rating,pts_tonight
 2026-11-27,PHX,Luke Kennard,,18.5,18.5,-0.64,-0.25
 2026-11-27,PHX,Khaman Maluach,,18.0,18.0,-0.97,-0.37
 2026-11-27,PHX,Ryan Dunn,,15.5,14.2,-0.95,-0.28
-2026-11-27,POR,Deni Avdija,,33.2,33.2,2.59,1.79
-2026-11-27,POR,Toumani Camara,,31.6,31.6,-1.03,-0.67
-2026-11-27,POR,Damian Lillard,,30.7,30.7,1.89,1.21
-2026-11-27,POR,Jrue Holiday,,28.9,28.9,1.45,0.87
-2026-11-27,POR,Donovan Clingan,,26.5,26.5,2.22,1.22
-2026-11-27,POR,Sidy Cissoko,,25.0,25.0,-1.68,-0.88
-2026-11-27,POR,Scoot Henderson,,24.4,24.4,-0.52,-0.26
-2026-11-27,POR,Robert Williams III,,17.1,17.1,1.77,0.63
-2026-11-27,POR,Branden Carlson,,10.6,10.6,-0.92,-0.2
-2026-11-27,POR,Jayson Kent,,10.5,10.5,-1.87,-0.41
-2026-11-27,POR,Micah Potter,,10.2,1.4,-0.8,-0.02
+2026-11-27,POR,Deni Avdija,,33.2,34.4,2.59,1.85
+2026-11-27,POR,Toumani Camara,,31.6,32.7,-1.03,-0.7
+2026-11-27,POR,Jrue Holiday,,28.9,29.9,1.45,0.9
+2026-11-27,POR,Donovan Clingan,,26.5,27.4,2.22,1.27
+2026-11-27,POR,Sidy Cissoko,,25.0,25.9,-1.68,-0.91
+2026-11-27,POR,Scoot Henderson,,24.4,25.3,-0.52,-0.27
+2026-11-27,POR,Robert Williams III,,17.1,17.7,1.77,0.65
+2026-11-27,POR,Branden Carlson,,10.6,11.0,-0.92,-0.21
+2026-11-27,POR,Jayson Kent,,10.5,10.8,-1.87,-0.42
+2026-11-27,POR,Micah Potter,,10.2,10.6,-0.8,-0.18
+2026-11-27,POR,Yang Hansen,,7.3,7.6,-2.69,-0.42
+2026-11-27,POR,John Tonje,,6.6,6.8,-1.67,-0.24
 2026-11-27,SA,Stephon Castle,,31.3,31.3,1.5,0.98
 2026-11-27,SA,Devin Vassell,,31.3,31.3,-0.17,-0.11
 2026-11-27,SA,Victor Wembanyama,,30.9,30.9,6.38,4.1
@@ -230,12 +230,13 @@ date,team,player,status,usual_min,proj_min,rating,pts_tonight
 2026-11-27,UTAH,Keyonte George,,32.7,32.7,0.51,0.34
 2026-11-27,UTAH,Ace Bailey,,30.8,30.8,-2.83,-1.82
 2026-11-27,UTAH,Darryn Peterson,,29.3,29.3,-1.4,-0.86
-2026-11-27,UTAH,Mo Bamba,,22.5,22.5,0.24,0.11
 2026-11-27,UTAH,Svi Mykhailiuk,,22.2,22.2,-1.82,-0.85
 2026-11-27,UTAH,Brice Sensabaugh,,20.1,20.1,-1.82,-0.76
 2026-11-27,UTAH,Josh Green,,19.5,19.5,-0.73,-0.3
 2026-11-27,UTAH,Josh Okogie,,17.4,17.4,-2.06,-0.75
 2026-11-27,UTAH,Isaiah Collier,,16.4,16.4,-1.83,-0.62
 2026-11-27,UTAH,Kyle Filipowski,,13.6,13.6,-1.89,-0.53
+2026-11-27,UTAH,Mo Bamba,GTD,22.5,11.3,0.24,0.06
 2026-11-27,UTAH,Jaxson Hayes,GTD,21.7,10.8,-0.83,-0.19
-2026-11-27,UTAH,Tony Bradley,,10.8,4.5,-2.15,-0.2
+2026-11-27,UTAH,Tony Bradley,,10.8,10.8,-2.15,-0.48
+2026-11-27,UTAH,Kobe Bufkin,,5.4,4.9,-2.56,-0.26
